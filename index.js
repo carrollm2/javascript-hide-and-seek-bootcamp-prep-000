@@ -4,26 +4,34 @@ function getFirstSelector(selector){
 }
 
 function nestedTarget(){
-  return document.querySelector('div.target')
+
+  return document.querySelector("#nested .target")
 }
 
 function increaseRankBy(n){
 
-  const lis = document.getElementById('app').querySelectorAll('ul.ranked-list')
+  const rank = document.getElementById('app').querySelectorAll('ul.ranked-list')
 
-  for (let i = 0; i < lis.length; i++) {
-    lis[i].innerHTML = (parseInt(lis[i]) + n).toString()
+  for (let i = 0; i < rank.length; i++) {
+    rank[i].innerHTML = (parseInt(rank[i]) + n).toString()
   }
-  return lis
+  return rank
 }
 
 function deepestChild(){
-  const lis = document.getElementById('app').querySelectorAll('div.grand-node')
 
   /*
-  for (let i = 0; i < lis.length; i++){
-    deepChild = lis[i]
-  }
+  const main = document.getElementsByTagName('main')[0]
+  const grandnode = main.children[4]
+
+  const div = grandnode.children[0]
+  const div1 = div.children[0]
+  const div2 = div1.children[0]
+  const div3 = div2.children[0]
+
+  return div3
   */
-  return lis
+
+  return document.querySelector('#grand-node div div div div')
+
 }
