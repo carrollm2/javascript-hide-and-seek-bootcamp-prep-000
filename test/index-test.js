@@ -19,6 +19,10 @@ describe('index', () => {
       expect(deepestChild()).toBe(document.querySelector('#grand-node div div div div'))
     })
 
+<<<<<<< HEAD
+=======
+    console.log(document.querySelector('#nested .target'))
+>>>>>>> c15c79cc9864f67d7b01419704752c7c2123dbd1
   })
 
   describe('increaseRankBy(n)', () => {

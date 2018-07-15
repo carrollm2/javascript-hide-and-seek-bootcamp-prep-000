@@ -5,7 +5,11 @@ function getFirstSelector(selector){
 
 function nestedTarget(){
 
+<<<<<<< HEAD
   return document.querySelector("#nested .target")
+=======
+  return document.querySelector(".target")
+>>>>>>> c15c79cc9864f67d7b01419704752c7c2123dbd1
 }
 
 function increaseRankBy(n){
@@ -19,6 +23,11 @@ function increaseRankBy(n){
 }
 
 function deepestChild(){
+<<<<<<< HEAD
+=======
+  //const lis = document.getElementById('app').querySelectorAll('div.grand-node')
+
+>>>>>>> c15c79cc9864f67d7b01419704752c7c2123dbd1
 
   /*
   const main = document.getElementsByTagName('main')[0]
